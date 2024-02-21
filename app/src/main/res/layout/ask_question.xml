@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_border"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--Question is displayed here-->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Question?"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--Subject is displayed here-->
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Subject"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <!--Topic is displayed here-->
+    <TextView
+        android:id="@+id/topicText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Topic"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!--Options are displayed here-->
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+        <!-- RadioButtons will be added programmatically -->
+    </RadioGroup>
+
+    <!--Button to submit Answer-->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:text="Submit" />
+
+    <!--Error is displayed here-->
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

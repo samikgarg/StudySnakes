@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/red"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blue"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!--Guidelines to set Square Layouts-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!--All Squares-->
+    <ImageView
+        android:id="@+id/square01"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square02"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square18"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square01" />
+
+    <ImageView
+        android:id="@+id/square02"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square03"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square17"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square02" />
+
+    <ImageView
+        android:id="@+id/square03"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square04"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square16"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square03" />
+
+    <ImageView
+        android:id="@+id/square04"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square05"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square15"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square04" />
+
+    <ImageView
+        android:id="@+id/square05"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square14"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square05" />
+
+    <ImageView
+        android:id="@+id/square06"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square05"
+        app:layout_constraintTop_toBottomOf="@+id/square13"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square06" />
+
+    <ImageView
+        android:id="@+id/square07"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square06"
+        app:layout_constraintTop_toBottomOf="@+id/square12"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square07" />
+
+    <ImageView
+        android:id="@+id/square08"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square07"
+        app:layout_constraintTop_toBottomOf="@+id/square11"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square08" />
+
+
+    <ImageView
+        android:id="@+id/square09"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square08"
+        app:layout_constraintTop_toBottomOf="@+id/square10"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square09" />
+
+    <ImageView
+        android:id="@+id/square10"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square11"
+        app:layout_constraintTop_toBottomOf="@+id/square27"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square10" />
+
+    <ImageView
+        android:id="@+id/square11"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square12"
+        app:layout_constraintTop_toBottomOf="@+id/square26"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square11" />
+
+    <ImageView
+        android:id="@+id/square12"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square13"
+        app:layout_constraintTop_toBottomOf="@+id/square25"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square12" />
+
+    <ImageView
+        android:id="@+id/square13"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square14"
+        app:layout_constraintTop_toBottomOf="@+id/square24"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square13" />
+
+    <ImageView
+        android:id="@+id/square14"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square23"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square14" />
+
+    <ImageView
+        android:id="@+id/square15"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square14"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square22"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square15" />
+
+    <ImageView
+        android:id="@+id/square16"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square15"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square21"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square16" />
+
+    <ImageView
+        android:id="@+id/square17"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square16"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square20"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square17" />
+
+    <ImageView
+        android:id="@+id/square18"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square17"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square19"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square18" />
+
+
+    <ImageView
+        android:id="@+id/square19"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square20"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/square36"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square19" />
+
+    <ImageView
+        android:id="@+id/square20"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square21"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square35"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square20" />
+
+    <ImageView
+        android:id="@+id/square21"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square22"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square34"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square21" />
+
+    <ImageView
+        android:id="@+id/square22"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square23"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square33"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square22" />
+
+    <ImageView
+        android:id="@+id/square23"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square32"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square23" />
+
+    <ImageView
+        android:id="@+id/square24"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square24"
+        app:layout_constraintStart_toEndOf="@+id/square23"
+        app:layout_constraintTop_toBottomOf="@+id/square31" />
+
+    <ImageView
+        android:id="@+id/square25"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:layout_constraintStart_toEndOf="@+id/square24"
+        app:layout_constraintTop_toBottomOf="@+id/square30"
+        app:srcCompat="@drawable/square25" />
+
+    <ImageView
+        android:id="@+id/square26"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square26"
+        app:layout_constraintStart_toEndOf="@+id/square25"
+        app:layout_constraintTop_toBottomOf="@+id/square29"
+        tools:layout_editor_absoluteY="878dp" />
+
+
+    <ImageView
+        android:id="@+id/square27"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:layout_constraintStart_toEndOf="@+id/square26"
+        app:layout_constraintTop_toBottomOf="@+id/square28"
+        app:srcCompat="@drawable/square27" />
+
+    <ImageView
+        android:id="@+id/square28"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square28"
+        app:layout_constraintTop_toBottomOf="@id/square45"
+        app:layout_constraintStart_toEndOf="@id/square29"
+        tools:layout_editor_absoluteY="951dp" />
+
+    <ImageView
+        android:id="@+id/square29"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square30"
+        app:layout_constraintTop_toBottomOf="@+id/square44"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square29" />
+
+    <ImageView
+        android:id="@+id/square30"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square30"
+        app:layout_constraintTop_toBottomOf="@id/square43"
+        app:layout_constraintStart_toEndOf="@id/square31"
+        tools:layout_editor_absoluteY="1024dp" />
+
+    <ImageView
+        android:id="@+id/square31"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square32"
+        app:layout_constraintTop_toBottomOf="@+id/square42"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square31" />
+
+    <ImageView
+        android:id="@+id/square32"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/square41"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square32" />
+
+    <ImageView
+        android:id="@+id/square33"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square32"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square40"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square33" />
+
+    <ImageView
+        android:id="@+id/square34"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square34"
+        app:layout_constraintTop_toBottomOf="@id/square39"
+        app:layout_constraintEnd_toStartOf="@id/square33"
+        tools:layout_editor_absoluteY="1170dp" />
+
+    <ImageView
+        android:id="@+id/square35"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square34"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/square38"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square35" />
+
+    <ImageView
+        android:id="@+id/square36"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square36"
+        app:layout_constraintTop_toBottomOf="@id/square37"
+        app:layout_constraintEnd_toStartOf="@id/square35"
+        tools:layout_editor_absoluteY="1243dp" />
+
+    <ImageView
+        android:id="@+id/square37"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/square38"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square37" />
+
+    <ImageView
+        android:id="@+id/square38"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@id/square39"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square38" />
+
+    <ImageView
+        android:id="@+id/square39"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/square40"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square39" />
+
+
+    <ImageView
+        android:id="@+id/square40"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/square41"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square40" />
+
+    <ImageView
+        android:id="@+id/square41"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square41" />
+
+    <ImageView
+        android:id="@+id/square42"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square41"
+        app:layout_constraintTop_toBottomOf="@+id/square49"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square42" />
+
+    <ImageView
+        android:id="@+id/square43"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square43"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/square42"
+        tools:layout_editor_absoluteY="1463dp" />
+
+    <ImageView
+        android:id="@+id/square44"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square43"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square44" />
+
+    <ImageView
+        android:id="@+id/square45"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square45"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/square44"
+        tools:layout_editor_absoluteY="1536dp" />
+
+    <ImageView
+        android:id="@+id/square46"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square47"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square46" />
+
+    <ImageView
+        android:id="@+id/square47"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square47"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/square48"
+        tools:layout_editor_absoluteY="1609dp" />
+
+    <ImageView
+        android:id="@+id/square48"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square49"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square48" />
+
+    <ImageView
+        android:id="@+id/square49"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/square50"
+        app:srcCompat="@drawable/square49"
+        tools:layout_editor_absoluteY="1682dp" />
+
+
+    <ImageView
+        android:id="@+id/square50"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square50" />
+
+    <ImageView
+        android:id="@+id/square51"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toStartOf="@id/square50"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square51" />
+
+    <ImageView
+        android:id="@+id/square52"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/square51"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square52" />
+
+    <ImageView
+        android:id="@+id/square53"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@id/square52"
+        app:srcCompat="@drawable/square53"
+        tools:layout_editor_absoluteY="1829dp" />
+
+    <ImageView
+        android:id="@+id/square54"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/square53"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square54" />
+
+    <ImageView
+        android:id="@+id/square55"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square55"
+        app:layout_constraintBottom_toTopOf="@+id/square54"
+        app:layout_constraintEnd_toStartOf="@+id/square56"
+        tools:layout_editor_absoluteY="1902dp" />
+
+    <ImageView
+        android:id="@+id/square56"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square53"
+        app:layout_constraintEnd_toStartOf="@+id/square57"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square56" />
+
+    <ImageView
+        android:id="@+id/square57"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square57"
+        app:layout_constraintBottom_toTopOf="@+id/square52"
+        app:layout_constraintEnd_toStartOf="@+id/square58"
+        tools:layout_editor_absoluteY="1975dp" />
+
+
+    <ImageView
+        android:id="@+id/square58"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square51"
+        app:layout_constraintEnd_toStartOf="@+id/square59"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square58" />
+
+    <ImageView
+        android:id="@+id/square59"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square59" />
+
+    <ImageView
+        android:id="@+id/square60"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square49"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square59"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square60" />
+
+    <ImageView
+        android:id="@+id/square61"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square61"
+        app:layout_constraintBottom_toTopOf="@+id/square48"
+        app:layout_constraintStart_toEndOf="@+id/square60"
+        tools:layout_editor_absoluteY="2121dp" />
+
+    <ImageView
+        android:id="@+id/square62"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square47"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square61"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square62" />
+
+    <ImageView
+        android:id="@+id/square63"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square51"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square62"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square63" />
+
+    <ImageView
+        android:id="@+id/square64"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square63"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square65"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square64" />
+
+    <ImageView
+        android:id="@+id/square65"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square62"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square66"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square65" />
+
+    <ImageView
+        android:id="@+id/square66"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square61"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square67"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square66" />
+
+    <ImageView
+        android:id="@+id/square67"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square60"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square68"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square67" />
+
+
+    <ImageView
+        android:id="@+id/square68"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square68" />
+
+    <ImageView
+        android:id="@+id/square69"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square58"
+        app:layout_constraintEnd_toStartOf="@+id/square68"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square69" />
+
+    <ImageView
+        android:id="@+id/square70"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square57"
+        app:layout_constraintEnd_toStartOf="@+id/square69"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square70" />
+
+    <ImageView
+        android:id="@+id/square71"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square56"
+        app:layout_constraintEnd_toStartOf="@+id/square70"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square71" />
+
+    <ImageView
+        android:id="@+id/square72"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square55"
+        app:layout_constraintEnd_toStartOf="@+id/square71"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square72" />
+
+    <ImageView
+        android:id="@+id/square73"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square72"
+        app:layout_constraintEnd_toStartOf="@+id/square74"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square73" />
+
+    <ImageView
+        android:id="@+id/square74"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square71"
+        app:layout_constraintEnd_toStartOf="@+id/square75"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square74" />
+
+    <ImageView
+        android:id="@+id/square75"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square70"
+        app:layout_constraintEnd_toStartOf="@+id/square76"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square75" />
+
+
+    <ImageView
+        android:id="@+id/square76"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square69"
+        app:layout_constraintEnd_toStartOf="@+id/square77"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square76" />
+
+    <ImageView
+        android:id="@+id/square77"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square68"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square77" />
+
+    <ImageView
+        android:id="@+id/square78"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square67"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square77"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square78" />
+
+    <ImageView
+        android:id="@+id/square79"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square66"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square78"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square79" />
+
+    <ImageView
+        android:id="@+id/square80"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square65"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square79"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square80" />
+
+    <ImageView
+        android:id="@+id/square81"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square64"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square80"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square81" />
+
+    <ImageView
+        android:id="@+id/square82"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square81"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square83"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square82" />
+
+    <ImageView
+        android:id="@+id/square83"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square80"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square84"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square83" />
+
+    <ImageView
+        android:id="@+id/square84"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square79"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square85"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square84" />
+
+    <ImageView
+        android:id="@+id/square85"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square78"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toEndOf="@+id/square86"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square85" />
+
+
+    <ImageView
+        android:id="@+id/square86"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square77"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square86" />
+
+    <ImageView
+        android:id="@+id/square87"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square76"
+        app:layout_constraintEnd_toStartOf="@+id/square86"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square87" />
+
+    <ImageView
+        android:id="@+id/square88"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square75"
+        app:layout_constraintEnd_toStartOf="@+id/square87"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square88" />
+
+    <ImageView
+        android:id="@+id/square89"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square74"
+        app:layout_constraintEnd_toStartOf="@+id/square88"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square89" />
+
+    <ImageView
+        android:id="@+id/square90"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/square73"
+        app:layout_constraintEnd_toStartOf="@+id/square89"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.111"
+        app:srcCompat="@drawable/square90" />
+
+    <ImageView
+        android:id="@+id/ladder_20_to_71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-1dp"
+        app:layout_constraintBottom_toTopOf="@+id/square17"
+        app:layout_constraintStart_toEndOf="@+id/square19"
+        app:srcCompat="@drawable/ladder_20_to_71" />
+
+    <ImageView
+        android:id="@+id/snake_89_to_47"
+        android:layout_width="350dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/square89"
+        app:srcCompat="@drawable/snake_89_to_47" />
+
+    <ImageView
+        android:id="@+id/snake_85_to_19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/square90"
+        app:layout_constraintTop_toTopOf="@+id/square85"
+        app:srcCompat="@drawable/snake_85_to_19" />
+
+    <ImageView
+        android:id="@+id/ladder_64_to_84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/square64"
+        app:layout_constraintTop_toTopOf="@+id/square84"
+        app:srcCompat="@drawable/ladder_64_to_84" />
+
+    <ImageView
+        android:id="@+id/ladder_32_to_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/square23"
+        app:layout_constraintStart_toEndOf="@+id/square40"
+        app:srcCompat="@drawable/ladder_32_to_50" />
+
+    <ImageView
+        android:id="@+id/ladder_6_to_43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/square06"
+        app:layout_constraintEnd_toEndOf="@+id/square43"
+        app:srcCompat="@drawable/ladder_6_to_43" />
+
+    <ImageView
+        android:id="@+id/snake_46_to_3"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toEndOf="@+id/square02"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/snake_46_to_3" />
+
+    <!--Dice Images-->
+    <ImageView
+        android:id="@+id/dice1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/square86"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/dice1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square05"
+        app:srcCompat="@drawable/dice1" />
+
+    <!--Player Images-->
+    <ImageView
+        android:id="@+id/player2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/player2" />
+
+    <ImageView
+        android:id="@+id/player1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/player1" />
+
+    <!--Arrow Images-->
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice1_1"
+        app:layout_constraintTop_toBottomOf="@+id/square05"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/square86"
+        app:layout_constraintEnd_toStartOf="@+id/dice1_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
