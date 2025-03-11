@@ -1,9 +1,9 @@
-<h1>Study Snakes</h1>
+<h1 align="center">🐍 Study Snakes 📚</h1>
 
-<h2>Description</h2>
+<h2>📌 Description</h2>
 <p>Study Snakes is an innovative Android application designed to gamify learning by integrating the classic Snakes and Ladders board game with study material. Instead of progressing solely based on dice rolls, players answer subject-specific questions at each turn, making learning more interactive and engaging. The app ensures that success in the game is tied to knowledge retention and accuracy, creating a fun and effective way to study.</p>
 
-<h2>Features</h2>
+<h2>🚀 Features</h2>
 <ul>
     <li><strong>Gamified Learning Experience:</strong> Players advance through a Snakes and Ladders board by correctly answering questions, making revision an engaging activity.</li>
     <li><strong>Adaptive Question Difficulty:</strong> Uses an algorithm to adjust question difficulty based on player performance, ensuring continuous learning and challenge.</li>
