@@ -12,7 +12,6 @@
     <li><strong>AI-Powered Question Generation:</strong> Integrates OpenAI’s API to generate dynamic questions and answers based on user-provided topics.</li>
     <li><strong>Performance Tracking:</strong> Stores and displays player statistics, allowing users to track progress over time.</li>
     <li><strong>Multiplayer Mode:</strong> Allows multiple players to compete, reinforcing learning through friendly competition.</li>
-    <li><strong>Offline Mode:</strong> Fully functional without an internet connection, ensuring accessibility for all users.</li>
     <li><strong>Interactive UI:</strong> User-friendly interface with animated dice rolls, vibrant board designs, and engaging sound effects.</li>
 </ul>
 
