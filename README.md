@@ -51,8 +51,7 @@ StudySnakes is an **Android application** designed to **gamify the studying expe
 - **SQLite** – Storing and managing user-defined questions and performance data.
 - **OpenAI API** – AI-powered question generation.
 - **SQL Query Execution** – Advanced filtering and retrieval.
-- **Android Jetpack Components** – Efficient UI handling and database management.
-- **Animation Libraries** – Smooth dice rolling and player movements.
+- **Android Animation API** – Smooth dice rolling and player movements.
 - **Custom Error Handling System** – Prevents invalid database entries.
 - **Pythagorean Theorem-Based Movement Calculation** – Ensuring consistent animation speed.
 
